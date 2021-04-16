@@ -4,6 +4,10 @@ version: 0.1.0
 authors:
   - Philip Ross <dev@baseballlover723.com>
 
+targets:
+  chess_engine:
+    main: src/chess_engine.cr
+
 crystal: 1.0.0
 
 license: AGPLv3
