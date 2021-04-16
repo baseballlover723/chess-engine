@@ -1,0 +1,9 @@
+name: chess_engine
+version: 0.1.0
+
+authors:
+  - Philip Ross <dev@baseballlover723.com>
+
+crystal: 1.0.0
+
+license: AGPLv3
