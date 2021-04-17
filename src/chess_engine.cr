@@ -9,8 +9,8 @@ module ChessEngine
   VERSION = {{ read_file(".version") }}
 
   def self.new_game : Game
-    rules = [TestRule] of Rule
-    rule_set = RuleSet.new(rules)
+    rules = Set(Rule.class){TestRule}
+    rule_set = StaticRuleSet.new(rules)
     Game.new(rule_set)
   end
 end

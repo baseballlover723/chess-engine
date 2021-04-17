@@ -7,6 +7,14 @@ describe ChessEngine do
 
   it "can start a game" do
     game = ChessEngine.new_game
-    game.should be_a(ChessEngine::Game)
+    game.should be_a(Game)
+  end
+
+  it "initializes the game object with default rules" do
+    game = ChessEngine.new_game
+
+    game.rules.should be_a(RuleSet)
+    game.rules.empty?.should be_false
+    # TODO check against default rules
   end
 end
